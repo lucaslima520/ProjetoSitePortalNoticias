@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Title</title>
+</head>
+<body>
+    <header>
+      <div class="container_cabecalho">
+        <nav class="nav">
+            <a class="nav-link active" aria-current="page" href="#">TechNews</a>
+        </nav>
+    </div><div class="container_cabecalho">
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cadastro.html">Adicionar notícia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+    </div>
+    </header>
+    <div class="grid text-center">
+      <div class="g-col-6" id="tituloDetalhe">Ifood lança moto elétrica</div>
+  </div>
+    <div class="container_cards">
+      <img src="assets/images/Tecnologia.jpg" class="img-thumbnail" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" id="tituloDescricao">Ifood lança moto elétrica</h5>
+        <p class="card-text" id="descricaoDestalhes">São Paulo, maio de 2022. O iFood anuncia o lançamento oficial da primeira moto elétrica, 
+          a EVS Work iFood. Dessa forma, voltada aos entregadores no Brasil como uma nova opção de mobilidade que traz economia, 
+          em média, de 70% aos parceiros. Além disso, também é uma solução menos poluente.</p>
+      </div>
+    </div>
+    <div class="container_barraNavegação">
+      <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Pesquisar</a>
+          </div>
+      </nav>
+      <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Digite um nome" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+            </form>
+          </div>
+      </nav>
+      <div class="container_categorias">
+          <nav class="navbar bg-body-tertiary">
+              <div class="container-fluid">
+              <a class="navbar-brand" href="#">Categorias</a>
+              </div>
+          </nav>
+      </div>
+      <div class="container_links">
+          <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Adicionar notícia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
+      </div>
+  </div>
+  <div>
+    <footer class="container_rodape">Copyright (C) Portal - 2024</footer>
+  </div>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const selectedNews = JSON.parse(localStorage.getItem('selectedNews'));
+
+          if (selectedNews) {
+              document.getElementById('tituloDetalhe').textContent = selectedNews.title;
+              document.getElementById('tituloDescricao').textContent = selectedNews.title;
+              document.getElementById('descricaoDestalhes').textContent = selectedNews.content;
+          }
+      });
+  </script>
+</body> 
+</html>
+

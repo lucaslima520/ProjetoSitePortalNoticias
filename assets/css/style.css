@@ -1,0 +1,66 @@
+.container_cabecalho{
+    width: 50%;
+    background-color: black;
+    display: inline-block;
+    padding: 0.5%;
+}
+.link-opacity-10{
+    margin-left: 10%;
+    justify-content: end;
+}
+.g-col-6{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 2%;
+}
+#bemVindo{
+    font-weight: bold;
+    font-size: 55px;
+}
+.container_cards{
+    display: inline-block;
+    max-height: 100%;
+    overflow-x: hidden;
+    width: 56%;
+}
+.card{
+    display: inline-block;
+}
+.container_barraNavegação{
+    display: inline-block;
+    position: fixed;
+}
+.container_rodape{
+    width: 100%;
+    padding: 37px;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    color: white;
+}
+.container-sm{
+    background-color: Gainsboro;
+}
+#botao{
+    margin-bottom: 10px;
+}
+.card-title, .card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-title {
+    -webkit-line-clamp: 1;
+}
+
+.card-text {
+    -webkit-line-clamp: 3; 
+}
+#tituloDetalhes{
+    font-weight: bold;
+    font-size: 55px;
+}
+#addNoticia{
+    padding-top: 15px;
+}

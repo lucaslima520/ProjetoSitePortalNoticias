@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Página de Cadastro</title>
+</head>
+<body>
+    <header>
+        <div class="container_cabecalho">
+            <nav class="nav">
+                <a class="nav-link active" aria-current="page" href="#">TechNews</a>
+            </nav>
+        </div><div class="container_cabecalho">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cadastro.html">Adicionar notícia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
+              </ul>
+        </div>
+    </header>
+    <div class="container-sm">
+        <form id="newsForm">
+            <h1 id="addNoticia">Adicionar notícia</h1>
+            <div class="mb-3">
+              <label for="title" class="form-label">Título</label>
+              <input type="text" class="form-control" id="title">
+            </div>
+            <div class="mb-3">
+                <label for="content" class="form-label">Conteúdo</label>
+                <textarea class="form-control" id="content" rows="18"></textarea>
+              </div>
+            <div class="mb-3">
+              <label for="tags" class="form-label">Tags</label>
+              <input type="text" class="form-control" id="tags">
+            </div>
+            <button type="submit" class="btn btn-primary" id="botao">Salvar</button>
+          </form>
+    </div>
+    <div>
+        <footer class="container_rodape">Copyright (C) Portal - 2024</footer>
+    </div>
+    <script src="assets/js/scriptCadastro.js"></script>
+</body>
+</html>
